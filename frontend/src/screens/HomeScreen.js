@@ -8,7 +8,6 @@ import Loader from '../components/Loader'
 import Message from '../components/Message'
 
 
-
 // import products from '../products'
 // import axios from 'axios'
 
@@ -55,7 +54,7 @@ function HomeScreen() {
 
             { loading ? <Loader />
                 : error ? <Message variant='danger'>{error}</Message>
-                    : 
+                    :
                     <Row>
                         {products.map(product => {
                             return (
@@ -65,8 +64,7 @@ function HomeScreen() {
                             )
                         })}
                     </Row>
-            }
-   
+            }   
         </div>
     )
 }
